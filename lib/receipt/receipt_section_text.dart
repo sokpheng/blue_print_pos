@@ -6,6 +6,7 @@ import 'receipt_alignment.dart';
 import 'receipt_line.dart';
 import 'receipt_text.dart';
 import 'receipt_text_left_right.dart';
+import 'receipt_text_left_center_right.dart';
 import 'receipt_text_size_type.dart';
 import 'receipt_text_style.dart';
 import 'receipt_text_style_type.dart';
