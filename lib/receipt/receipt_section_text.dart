@@ -98,6 +98,7 @@ ${CollectionStyle.all}
   
   void addLeftCenterRightText(
     String leftText,
+    String centerText,
     String rightText, {
     ReceiptTextStyleType leftStyle = ReceiptTextStyleType.normal,
     ReceiptTextStyleType centerStyle = ReceiptTextStyleType.normal,
