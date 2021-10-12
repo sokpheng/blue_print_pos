@@ -32,10 +32,10 @@ class ReceiptTextLeftCenterRight {
   final ReceiptAlignment alignment;
 
   String get html => '''
-    <p class="full-width inline-block">
-      <${leftTextStyle.textStyleHTML} class="left ${leftTextStyle.textSizeHtml}">$leftText</${leftTextStyle.textStyleHTML}>
+    <p class="$_alignmentStyleHTML full-width inline-block">
+      <${leftTextStyle.textStyleHTML} class="left ${leftTextStyle.textSizeHtml}">$leftText</${leftTextStyle.textStyleHTML} style="width:30px">
       <${centerTextStyle.textStyleHTML} class="$_alignmentStyleHTML ${centerTextStyle.textSizeHtml}">$centerText</${centerTextStyle.textStyleHTML}>
-      <${rightTextStyle.textStyleHTML} class="right ${rightTextStyle.textSizeHtml}">$rightText</${rightTextStyle.textStyleHTML}>
+      <${rightTextStyle.textStyleHTML} class="right ${rightTextStyle.textSizeHtml}">$rightText</${rightTextStyle.textStyleHTML} style="width:80px">
     </p>
   ''';
 
