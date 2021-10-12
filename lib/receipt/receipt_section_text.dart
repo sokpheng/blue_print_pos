@@ -92,7 +92,7 @@ ${CollectionStyle.all}
         size: rightSize,
       ),
     );
-    _data += leftRightText.text;
+    _data += '${leftRightText.leftText} + ${leftRightText.rightText}';
   }
 
   /// Add new line as empty or dashed line.
