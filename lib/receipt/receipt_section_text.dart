@@ -64,7 +64,7 @@ ${CollectionStyle.all}
       ),
       alignment: alignment,
     );
-    _data += receiptText.text;
+    _data += receiptText.html;
   }
 
   /// Handler tag of text (span or b) and put inside body html
@@ -92,7 +92,40 @@ ${CollectionStyle.all}
         size: rightSize,
       ),
     );
-    _data += '${leftRightText.leftText} + ${leftRightText.rightText}';
+    _data += leftRightText.html;
+  }
+  
+  void addLeftCenterRightText(
+    String leftText,
+    String rightText, {
+    ReceiptTextStyleType leftStyle = ReceiptTextStyleType.normal,
+    ReceiptTextStyleType centerStyle = ReceiptTextStyleType.normal,
+    ReceiptTextStyleType rightStyle = ReceiptTextStyleType.normal,
+    ReceiptTextSizeType leftSize = ReceiptTextSizeType.medium,
+    ReceiptTextSizeType centerSize = ReceiptTextSizeType.medium,
+    ReceiptTextSizeType rightSize = ReceiptTextSizeType.medium,
+  }) {
+    final ReceiptTextLeftCenterRight leftCenterRightText = ReceiptTextLeftCenterRight(
+      leftText,
+      centerText,
+      rightText,
+      leftTextStyle: ReceiptTextStyle(
+        type: leftStyle,
+        useSpan: true,
+        size: leftSize,
+      ),
+      centerTextStyle: ReceiptTextStyle(
+        type: centerStyle,
+        useSpan: true,
+        size: centerSize,
+      ),
+      rightTextStyle: ReceiptTextStyle(
+        type: leftStyle,
+        useSpan: true,
+        size: rightSize,
+      ),
+    );
+    _data += leftCenterRightText.html;
   }
 
   /// Add new line as empty or dashed line.
