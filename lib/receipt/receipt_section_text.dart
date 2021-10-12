@@ -64,7 +64,7 @@ ${CollectionStyle.all}
       ),
       alignment: alignment,
     );
-    _data += receiptText.html;
+    _data += receiptText.text;
   }
 
   /// Handler tag of text (span or b) and put inside body html
@@ -92,7 +92,7 @@ ${CollectionStyle.all}
         size: rightSize,
       ),
     );
-    _data += leftRightText.html;
+    _data += leftRightText.text;
   }
 
   /// Add new line as empty or dashed line.
