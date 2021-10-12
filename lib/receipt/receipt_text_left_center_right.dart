@@ -34,7 +34,7 @@ class ReceiptTextLeftCenterRight {
   String get html => '''
     <p class="$_alignmentStyleHTML full-width inline-block">
       <${leftTextStyle.textStyleHTML} class="left ${leftTextStyle.textSizeHtml}">$leftText</${leftTextStyle.textStyleHTML}>
-      <${centerTextStyle.textStyleHTML} class="$_alignmentStyleHTML ${centerTextStyle.textSizeHtml}">$centerText</${centerTextStyle.textStyleHTML}>
+      <${centerTextStyle.textStyleHTML} class="${centerTextStyle.textSizeHtml}">$centerText</${centerTextStyle.textStyleHTML}>
       <${rightTextStyle.textStyleHTML} class="right ${rightTextStyle.textSizeHtml}">$rightText</${rightTextStyle.textStyleHTML}>
     </p>
   ''';
